@@ -1,4 +1,4 @@
-QUALITY=960 # max video width. Number will be rounded down to what the station actually provides.
+MEDIATHEK_QUALITY_DEFAULT=960 # max video width. Number will be rounded down to what the station actually provides.
 
 declare -A URL
 URL[ard]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL0xpdmVzdHJlYW0tRGFzRXJzdGU/

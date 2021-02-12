@@ -74,7 +74,13 @@ Note: the bashcompletion script is very helpful as it lists and auto-completes a
 
 ## Configuration
 
-~/.mediathekrc QUALITY is set to a video width of 960 pixels. It can be changed to higher or lower widths.
+~/.mediathekrc MEDIATHEK_QUALITY_DEFAULT is setting the default video width to 960 pixels. It can be changed to higher or lower widths.
+
+Environment variable MEDIATHEK_QUALITY overwrites the hardcoded value from ~/.mediathekrc, e.g.
+
+```
+$ MEDIATHEK_QUALITY=1280 mediathek ard
+```
 
 
 ## Notes
