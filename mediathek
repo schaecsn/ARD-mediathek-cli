@@ -5,7 +5,7 @@
 
 # re-calculate MEDIATHEK_QUALITY
 # environment variable MEDIATHEK_QUALITY overwrites MEDIATHEK_QUALITY_DEFAULT from ~/.mediathekrc
-MEDIATHEK_QUALITY="${MEDIATHEK_QUALITY:-MEDIATHEK_QUALITY_DEFAULT}"
+MEDIATHEK_QUALITY="${MEDIATHEK_QUALITY:-$MEDIATHEK_QUALITY_DEFAULT}"
 
 # argument: none
 # action: iterate over all stations and print currently played titles
