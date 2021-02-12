@@ -1,0 +1,1 @@
+complete -W "listing bayern wdr alpha swr tagesschau ndr sr ard deutschewelle mdr hr 3sat phoenix one arte bremen rbb" mediathek

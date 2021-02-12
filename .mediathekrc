@@ -1,0 +1,20 @@
+QUALITY=960 # max video width. Number will be rounded down to what the station actually provides.
+
+declare -A URL
+URL[ard]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL0xpdmVzdHJlYW0tRGFzRXJzdGU/
+URL[one]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTFlNjA0YWFlLTViODctNGMzNC04ZDhmLTg4OWI1ZjE2ZDU3Mw/
+URL[arte]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2FydGUuZGUvTGl2ZXN0cmVhbS1BUlRF/
+URL[alpha]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2JyLmRlL0xpdmVzdHJlYW0tQVJELUFscGhh/
+URL[phoenix]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3Bob2VuaXguZGUvTGl2ZXN0cmVhbS1waG9lbml4/
+URL[3sat]=https://www.ardmediathek.de/ard/live/Y3JpZDovLzNzYXQuZGUvTGl2ZXN0cmVhbS0zc2F0/
+URL[tagesschau]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhZ2Vzc2NoYXUvbGl2ZXN0cmVhbQ/
+URL[deutschewelle]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2RldXRzY2hld2VsbGUuZGUvTGl2ZXN0cmVhbS1EZXV0c2NoZVdlbGxl/
+URL[bayern]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2JyLmRlL0xpdmVzdHJlYW0tQlItU8O8ZA/
+URL[bremen]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3JhZGlvYnJlbWVuLmRlL3JhZGlvX2JyZW1lbl9saXZlc3RyZWFt/
+URL[hr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2hyLmRlL0xpdmVzdHJlYW0tSFI/
+URL[mdr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL21kci5kZS9MaXZlc3RyZWFtLU1EUi1TYWNoc2Vu/
+URL[ndr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL25kci5kZS9MaXZlc3RyZWFtLU5EUi1OaWVkZXJzYWNoc2Vu/
+URL[rbb]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3JiYi1vbmxpbmUuZGUvcmJiZmVybnNlaGVuL2xpdmVfYnJhbmRlbmJ1cmcvc2VuZGVwbGF0ei0tLWxpdmVzdHJlYW0tLS1icmFuZGVuYnVyZy0tLWhsczE/
+URL[sr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3NyLW9ubGluZS5kZS8yODQ4NjAvbGl2ZXN0cmVhbQ/
+URL[swr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3N3ci5kZS8xMzQ4MTA0Mg/
+URL[wdr]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTNkYTY2NGRlLTE4YzItNDY1MC1hNGZmLTRmNjQxNDcyMDcyYg/

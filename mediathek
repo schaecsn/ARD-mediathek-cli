@@ -1,0 +1,53 @@
+# play video streams from the ARD mediathek
+
+# get URLs and QUALITY (the max width of the video)
+. ~/.mediathekrc
+
+# argument: none
+# action: iterate over all stations and print currently played titles
+function listing() {
+for station in ${!URL[@]}; do
+    title $station
+done
+}
+
+# argument: station
+# action: print station name and current title as a one-liner
+function title() {
+  station=$1
+  echo -ne "$station:\t"
+  lynx -width=200 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1
+}
+
+# argument: station and title
+# action: play video
+function play() {
+  station=$1
+  title=$2
+  youtube-dl -q -o - -f "best[width<=${QUALITY}]" ${URL[$station]} | ffplay -loglevel 8 -window_title "$title" -
+}
+
+
+# main
+if [ "$1" == "listing" ]
+then
+    listing
+elif [ ${URL[$1]+_} ]
+then
+     station="$1"
+
+    # get title
+    title="$(title $station)"
+    
+    # play video
+    echo $title
+    play "$station" "$title"
+else
+    echo supported arguments: listing ${!URL[@]}
+    echo
+    echo To enable bash completion of arguments, consider adding this line to your ~/.bashrc:
+    echo complete -W \"listing ${!URL[@]}\" mediathek
+    exit 1
+fi
+
+exit 0
