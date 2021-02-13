@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # play video streams from the ARD mediathek
 
 # get URLs and MEDIATHEK_QUALITY_DEFAULT (the max width of the video)
