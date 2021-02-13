@@ -1,3 +1,4 @@
+#!/bin/bash
 # play video streams from the ARD mediathek
 
 # get URLs and MEDIATHEK_QUALITY_DEFAULT (the max width of the video)
@@ -38,7 +39,7 @@ then
     listing
 elif [ ${URL[$1]+_} ]
 then
-     station="$1"
+    station="$1"
 
     # get title
     title="$(title $station)"
