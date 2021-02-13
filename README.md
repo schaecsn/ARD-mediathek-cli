@@ -4,16 +4,16 @@
 
 ```
 $ mediathek <tab><tab>
-listing        arte           deutschewelle  mdr            phoenix        swr
+wdr            arte           deutschewelle  mdr            phoenix        swr
 alpha          bayern         hr             ndr            rbb            tagesschau
-ard            bremen         3sat           one            sr             wdr
+ard            bremen         3sat           one            sr
 ```
 
 
-## listing displays the current broadcast titles:
+## no arguments displays the current broadcast titles:
 
 ```
-$ mediathek listing
+$ mediathek
 bayern:	Aufschrei der Jugend
 wdr:	Shalom und Alaaf
 alpha:	Weltspiegel-Reportage: Chinas neue Seidenstraﬂe

@@ -33,7 +33,7 @@ function play() {
 
 
 # main
-if [ "$1" == "listing" ]
+if [ $# == 0 ]
 then
     listing
 elif [ ${URL[$1]+_} ]
@@ -47,10 +47,10 @@ then
     echo $title
     play "$station" "$title"
 else
-    echo supported arguments: listing ${!URL[@]}
+    echo supported arguments: ${!URL[@]}
     echo
     echo To enable bash completion of arguments, consider adding this line to your ~/.bashrc:
-    echo complete -W \"listing ${!URL[@]}\" $0
+    echo complete -W \"${!URL[@]}\" $0
     exit 1
 fi
 
