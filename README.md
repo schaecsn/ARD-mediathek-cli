@@ -10,7 +10,7 @@ ard            bremen         3sat           one            sr
 ```
 
 
-## no arguments displays the current broadcast titles:
+## Invocation with no arguments displays stations and current titles:
 
 ```
 $ mediathek
@@ -34,7 +34,7 @@ rbb:	Grenzbock
 ```
 
 
-## Pass a channel to have it played in ffplay (press q to quit ffplay):
+## Pass a channel to have it played in ffplay:
 
 ```
 $ mediathek arte &
@@ -42,28 +42,34 @@ arte: Nanouk
 <ffplay opens with a video stream>
 ```
 
+In ffplay, press 'q' to quit and 'f' to enter or leave fullscreen mode.
+
 
 ## International IP Addresses
 
 Mediathek does not play geoblocked streams. This is not completely true: some streams which are geoblocked on the ARD mediathek website are actually not geoblocked and do nicely play in mediathek.
 
-Mediathek plays streams which the ARD mediathek website fails playing with "Dieses Video kann leider nicht abgespielt werden. Wir bitten um Ihr Verständnis. Qualitätsauswahl für externen Player". This happens very often with my international IP address.
+Mediathek plays streams which the ARD mediathek website fails playing with "Dieses Video kann leider nicht abgespielt werden. Wir bitten um Ihr Verständnis. Qualitätsauswahl für externen Player". This happens very often with my international IP address and is main reason why this project exist.
 
-What probably goes without saying ist that mediathek does not play "Die derzeigte Sendung ist aus rechtlchen Gründen nicht im Livestream verfügbar."
+What probably goes without saying ist that mediathek does not play "Die derzeigte Sendung ist aus rechtlichen Gründen nicht im Livestream verfügbar."
 
 
 ## Prerequisites
 
-bash, lynx, youtube-dl, ffplay.
+bash (for autocompletion), lynx (for downloading broadcast titles), youtube-dl (for downloading video streams), ffplay (for displaying video streams).
 
 
 ## Installation
 
+> install all prerequisites
+
 > copy mediathek into your $PATH, say /opt/bin/
 
-> copy .mediathekrc into your $HOME directory ~
+> copy .mediathekrc into your $HOME directory
 
 > copy mediathekcompletion into /etc/bash_completion.d/
+
+Alternatively, link these files from the cloned git repo into these three directories.
 
 Note: the bashcompletion script is very helpful as it lists and auto-completes all stations. If it is not picked up automatically, then work around it by adding to your ~/.bashrc:
 
@@ -74,13 +80,18 @@ Note: the bashcompletion script is very helpful as it lists and auto-completes a
 
 ## Configuration
 
-~/.mediathekrc MEDIATHEK_QUALITY_DEFAULT is setting the default video width to 960 pixels. It can be changed to higher or lower widths.
+In ~/.mediathekrc, variable MEDIATHEK_QUALITY_DEFAULT sets the video width to 960 pixels. This variable is user changeable and can be set to higher or lower widths.
 
-Environment variable MEDIATHEK_QUALITY overwrites the hardcoded value from ~/.mediathekrc, e.g.
+Environment variable MEDIATHEK_QUALITY temporarily overwrites the hardcoded value from ~/.mediathekrc, e.g.
 
 ```
 $ MEDIATHEK_QUALITY=1280 mediathek ard
 ```
+
+
+## Contributing
+
+For contribution guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 
 ## Notes
