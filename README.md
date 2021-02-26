@@ -1,6 +1,6 @@
 # Play ARD Mediathek Livestreams on the Unix Commandline
 
-## mediathek auto-completion:
+## mediathek auto-completion
 
 ```
 $ mediathek <tab><tab>
@@ -10,7 +10,7 @@ ard            bremen         3sat           one            sr
 ```
 
 
-## Invocation with no arguments displays stations and current titles:
+## Invocation with no arguments displays stations and current titles
 
 ```
 $ mediathek
@@ -34,7 +34,7 @@ rbb:	Grenzbock
 ```
 
 
-## Pass a channel to have it played in ffplay:
+## A passed channel is played in ffplay
 
 ```
 $ mediathek arte &
@@ -82,7 +82,7 @@ Note: the bashcompletion script is very helpful as it lists and auto-completes a
 
 In ~/.mediathekrc, variable MEDIATHEK_QUALITY_DEFAULT sets the video width to 960 pixels. This variable is user changeable and can be set to higher or lower widths.
 
-Environment variable MEDIATHEK_QUALITY temporarily overwrites the hardcoded value from ~/.mediathekrc, e.g.
+Environment variable MEDIATHEK_QUALITY takes precedence over the hardcoded value from ~/.mediathekrc, e.g.
 
 ```
 $ MEDIATHEK_QUALITY=1280 mediathek ard
