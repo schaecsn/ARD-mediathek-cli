@@ -29,7 +29,7 @@ function title() {
 function play() {
   station=$1
   title=$2
-  youtube-dl -q -o - -f "best[width<=${MEDIATHEK_QUALITY}]" ${URL[$station]} | ffplay -loglevel 8 -window_title "$title" -
+  youtube-dl -q -o - -f "best[width<=${MEDIATHEK_QUALITY}]" ${URL[$station]} | ffplay -loglevel 8 -window_title "$title" -infbuf -
 }
 
 
