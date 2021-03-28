@@ -12,16 +12,16 @@ MEDIATHEK_QUALITY="${MEDIATHEK_QUALITY:-$MEDIATHEK_QUALITY_DEFAULT}"
 # action: iterate over all stations and print currently played titles
 function listing() {
 for station in ${!URL[@]}; do
-    title $station
-done
+    title $station &
+done | sort
 }
 
 # argument: station
 # action: print station name and current title as a one-liner
 function title() {
   station=$1
-  echo -ne "$station:\t"
-  lynx -width=200 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1
+  title=`lynx -width=200 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1`
+  echo -e "$station:\t$title"
 }
 
 # argument: station and title
