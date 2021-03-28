@@ -20,8 +20,10 @@ done | sort
 # action: print station name and current title as a one-liner
 function title() {
   station=$1
+  stationpadded="$1              "
+  stationchopped=${stationpadded:0:14}
   title=`lynx -width=200 -display_charset=utf-8 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1`
-  echo -e "$station:\t$title"
+  echo -e "$stationchopped$title"
 }
 
 # argument: station and title

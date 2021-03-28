@@ -14,23 +14,24 @@ ard            bremen         3sat           one            sr
 
 ```
 $ mediathek
-bayern:	Aufschrei der Jugend
-wdr:	Shalom und Alaaf
-alpha:	Weltspiegel-Reportage: Chinas neue Seidenstraße
-swr:	mal ehrlich ... Frauen in Not - wie stoppen wir häusliche Gewalt?
-tagesschau:	Tagesthemen
-ndr:	Großstadtrevier
-sr:	mal ehrlich ... Frauen in Not - wie stoppen wir häusliche Gewalt?
-ard:	Tagesthemen
-deutschewelle:	Stimme Deutschlands)
-mdr:	Polizeiruf 110: Totes Rennen
-hr:	Hessen lacht zur Fassenacht 2020
-3sat:	Die verlorene Tochter (5/6)
-phoenix:	phoenix der tag
-one:	Mary Higgins Clark - Mysteriöse Verbrechen (1)
-arte:	Nanouk
-bremen:	Großstadtrevier
-rbb:	Grenzbock
+$ ./mediathek
+3sat          Der Kameramörder
+alpha         Space Night
+ard           Afrobeats - Rhythmus für die Metropolen der Welt
+arte          28 Minuten
+bayern        Sex
+bremen        buten un binnen | regionalmagazin
+deutschewelle Stimme Deutschlands)
+hr            Wunderschön! Urlaub in Nordholland
+mdr           MDR SACHSEN-ANHALT HEUTE
+ndr           buten un binnen | regionalmagazin
+one           Agatha Christie - Mörderische Spiele
+phoenix       Die Gesten der Mächtigen
+rbb           Donna Leon - Verschwiegene Kanäle
+sr            Ein Fall von Liebe - Saubermänner
+swr           Ein Fall von Liebe - Saubermänner
+tagesschau    daten der woche
+wdr           Wunderschön! Slowenien - Alpen mit Meerblick
 ```
 
 
@@ -38,7 +39,7 @@ rbb:	Grenzbock
 
 ```
 $ mediathek arte &
-arte: Nanouk
+arte           28 Minuten
 <ffplay opens with a video stream>
 ```
 
