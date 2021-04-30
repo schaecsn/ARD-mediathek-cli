@@ -48,7 +48,7 @@ then
     
     # play video
     echo $title
-    play "$station" "$title"
+    play "$station" "mediathek $title"
 else
     echo supported arguments: ${!URL[@]}
     echo
