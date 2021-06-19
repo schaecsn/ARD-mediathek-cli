@@ -54,6 +54,8 @@ Mediathek plays streams which the ARD mediathek website fails playing with "Dies
 
 What probably goes without saying ist that mediathek does not play "Die derzeigte Sendung ist aus rechtlichen Gründen nicht im Livestream verfügbar."
 
+Mediathek supports running over https proxies (see Configuration). A proxy from Germany should work around geoblocked content.
+
 
 ## Prerequisites
 
@@ -87,6 +89,12 @@ Environment variable MEDIATHEK_QUALITY takes precedence over the hardcoded value
 
 ```
 $ MEDIATHEK_QUALITY=1280 mediathek ard
+```
+
+A https/ssl proxy can be configured via environment variable https_proxy. e.g.
+
+```
+$ https_proxy=127.0.0.1:4001 mediathek ard
 ```
 
 
