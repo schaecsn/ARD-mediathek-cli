@@ -101,10 +101,3 @@ $ https_proxy=127.0.0.1:4001 mediathek ard
 ## Contributing
 
 For contribution guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-
-## Notes
-
-The channel urls are hardcoded in ~/.mediathekrc. They are quite cryptic and may change from time to time. At the time of publishing this project, they have already been stable for one month.
-
-Extracting the titles from the ARD mediathek website depends also very much on its cryptic html code.
