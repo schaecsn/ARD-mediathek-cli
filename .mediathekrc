@@ -1,7 +1,7 @@
 MEDIATHEK_QUALITY_DEFAULT=960 # max video width. Number will be rounded down to what the station actually provides.
 
 declare -A URL
-URL[ard]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL0xpdmVzdHJlYW0tRGFzRXJzdGU/
+URL[ard]=https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ/
 URL[one]=https://www.ardmediathek.de/ard/live/Y3JpZDovL3dkci5kZS9CZWl0cmFnLTFlNjA0YWFlLTViODctNGMzNC04ZDhmLTg4OWI1ZjE2ZDU3Mw/
 URL[arte]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2FydGUuZGUvTGl2ZXN0cmVhbS1BUlRF/
 URL[alpha]=https://www.ardmediathek.de/ard/live/Y3JpZDovL2JyLmRlL0xpdmVzdHJlYW0tQVJELUFscGhh/
