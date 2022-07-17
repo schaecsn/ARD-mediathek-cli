@@ -14,7 +14,6 @@ ard            bremen         3sat           one            sr
 
 ```
 $ mediathek
-$ ./mediathek
 3sat          Der Kameramörder
 alpha         Space Night
 ard           Afrobeats - Rhythmus für die Metropolen der Welt
