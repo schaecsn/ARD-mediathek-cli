@@ -14,27 +14,27 @@ unset https_proxy # otherwise lynx will also use the proxy
 # argument: none
 # action: iterate over all stations and print currently played titles
 function listing() {
-for station in ${!URL[@]}; do
-    title $station &
-done | sort
+    for station in ${!URL[@]}; do
+        title $station &
+    done | sort
 }
 
 # argument: station
 # action: print station name and current title as a one-liner
 function title() {
-  station=$1
-  stationpadded="$1              "
-  stationchopped=${stationpadded:0:14}
-  title=`lynx -width=200 -display_charset=utf-8 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1`
-  echo -e "$stationchopped$title"
+    station=$1
+    stationpadded="$1              "
+    stationchopped=${stationpadded:0:14}
+    title=`lynx -width=200 -display_charset=utf-8 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1`
+    echo -e "$stationchopped$title"
 }
 
 # argument: station and title
 # action: play video
 function play() {
-  station=$1
-  title=$2
-  youtube-dl -q -o - ${PROXY} -f "best[width<=${MEDIATHEK_QUALITY}]/bestvideo[width<=${MEDIATHEK_QUALITY}]" ${URL[$station]} | ffplay -loglevel 8 -window_title "$title" -infbuf -
+    station=$1
+    title=$2
+    youtube-dl -q -o - ${PROXY} -f "best[width<=${MEDIATHEK_QUALITY}]/bestvideo[width<=${MEDIATHEK_QUALITY}]" ${URL[$station]} | ffplay -loglevel 8 -window_title "$title" -infbuf -
 }
 
 
