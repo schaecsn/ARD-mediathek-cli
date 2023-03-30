@@ -34,15 +34,15 @@ wdr           Wunderschön! Slowenien - Alpen mit Meerblick
 ```
 
 
-## A passed channel is played in ffplay
+## A passed channel is played in mpv multimedia player.
 
 ```
 $ mediathek arte &
 arte           28 Minuten
-<ffplay opens with a video stream>
+<mpv opens with a video stream>
 ```
 
-In ffplay, press 'q' to quit and 'f' to enter or leave fullscreen mode.
+In mpv, press 'q' to quit and 'f' to enter or leave fullscreen mode.
 
 
 ## International IP Addresses
@@ -58,8 +58,9 @@ Mediathek supports running over https proxies (see Configuration). A proxy from 
 
 ## Prerequisites
 
-bash (for autocompletion), lynx (for downloading broadcast titles), youtube-dl (for downloading video streams), ffplay (for displaying video streams).
+bash (for autocompletion), lynx (for downloading broadcast titles), mpv (for displaying video streams).
 
+commit 673c93a5e80307a3bcf8ad5105425cb61760864b was the last commit requiring youtube-dl and ffplay. They have been now replaced with mpv.
 
 ## Installation
 
@@ -90,10 +91,10 @@ Environment variable MEDIATHEK_QUALITY takes precedence over the hardcoded value
 $ MEDIATHEK_QUALITY=1280 mediathek ard
 ```
 
-A https/ssl proxy can be configured via environment variable https_proxy. e.g.
+A https/ssl proxy can be configured via environment variable http_proxy. e.g.
 
 ```
-$ https_proxy=127.0.0.1:4001 mediathek ard
+$ http_proxy=127.0.0.1:4001 mediathek ard
 ```
 
 
