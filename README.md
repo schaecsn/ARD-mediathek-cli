@@ -7,6 +7,12 @@ $ mediathek <tab><tab>
 wdr            arte           deutschewelle  mdr            phoenix        swr
 alpha          bayern         hr             ndr            rbb            tagesschau
 ard            bremen         3sat           one            sr
+
+$ mediathek b<tab><tab>
+bayern bremen
+
+$ mediathek ba<tab><tab>
+bayern
 ```
 
 
@@ -34,7 +40,7 @@ wdr           Wunderschön! Slowenien - Alpen mit Meerblick
 ```
 
 
-## A passed channel is played in mpv multimedia player.
+## A passed channel is played in mpv multimedia player
 
 ```
 $ mediathek arte &
