@@ -1,21 +1,5 @@
 # Play ARD Mediathek Livestreams on the Unix Commandline
 
-## mediathek auto-completion
-
-```
-$ mediathek <tab><tab>
-wdr            arte           deutschewelle  mdr            phoenix        swr
-alpha          bayern         hr             ndr            rbb            tagesschau
-ard            bremen         3sat           one            sr
-
-$ mediathek b<tab><tab>
-bayern bremen
-
-$ mediathek ba<tab><tab>
-bayern
-```
-
-
 ## Invocation with no arguments displays stations and current titles
 
 ```
@@ -49,6 +33,21 @@ arte           28 Minuten
 ```
 
 In mpv, press 'q' to quit and 'f' to enter or leave fullscreen mode.
+
+
+## mediathek auto-completion
+
+```
+$ mediathek <tab><tab>
+wdr            arte           deutschewelle  mdr            phoenix        swr
+alpha          bayern         hr             ndr            rbb            tagesschau
+ard            bremen         3sat           one            sr
+
+$ mediathek b<tab><tab>
+bayern bremen
+
+$ mediathek ba<tab>yern
+```
 
 
 ## International IP Addresses
