@@ -96,10 +96,10 @@ Environment variable MEDIATHEK_QUALITY takes precedence over the hardcoded value
 $ MEDIATHEK_QUALITY=1280 mediathek ard
 ```
 
-A https/ssl proxy can be configured via environment variable http_proxy. e.g.
+A https/ssl proxy can be configured via environment variable https_proxy. e.g.
 
 ```
-$ http_proxy=127.0.0.1:4001 mediathek ard
+$ https_proxy=127.0.0.1:4001 mediathek ard
 ```
 
 
