@@ -10,6 +10,7 @@ MEDIATHEK_QUALITY="${MEDIATHEK_QUALITY:-$MEDIATHEK_QUALITY_DEFAULT}"
 
 # PROXY: environment variable https_proxy gets propagated into this script
 PROXY=${https_proxy:+"--ytdl-raw-options=proxy=[http://${https_proxy}]"}
+unset https_proxy # otherwise lynx will also use the proxy
 
 # argument: none
 # action: iterate over all stations and print currently played titles
