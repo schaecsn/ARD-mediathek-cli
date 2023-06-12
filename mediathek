@@ -35,7 +35,7 @@ function title() {
 function play() {
     station=$1
     title=$2
-    mpv --really-quiet --title="$title" ${PROXY} --ytdl-format="best[width<=${MEDIATHEK_QUALITY}]/bestvideo[width<=${MEDIATHEK_QUALITY}]+bestaudio" --ytdl ${URL[$station]} 2> /dev/null
+    mpv --really-quiet -ao pulse,pipewire --no-osd-bar --title="$title" ${PROXY} --ytdl-format="best[width<=${MEDIATHEK_QUALITY}]/bestvideo[width<=${MEDIATHEK_QUALITY}]+bestaudio" --ytdl ${URL[$station]} 2> /dev/null
 }
 
 
