@@ -26,7 +26,7 @@ function title() {
     station=$1
     stationpadded="$1              "
     stationchopped=${stationpadded:0:14}
-    title=`lynx -width=200 -display_charset=utf-8 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -1`
+    title=`lynx -width=200 -display_charset=utf-8 -dump ${URL[$station]} | grep -av "^$" | grep -av "^ " | head -2 | tail -1`
     echo -e "$stationchopped$title"
 }
 
